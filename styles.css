@@ -67,6 +67,7 @@
       position: absolute; /* 絶対配置で自由移動 */
       left: 0; top: 0;
       transition: box-shadow .12s ease;
+	  touch-action: none; /*モバイルでスクロールやズームを無効化 */
     }
     .card.dragging { 
 		 box-shadow: 0 10px 18px rgba(0,0,0,.2); 
