@@ -119,7 +119,7 @@ generateBtn.addEventListener("click", function(e){
 
   let x;          //カードの位置 (x, y)
   let y = 20;     //
-  let gap = 20;   //カードとカードの隙間
+  let gap = 30;   //カードとカードの隙間
 
   numbers.forEach(function(num, i){       //乱数で発生させた数を取り出す
     let card = createCard(num);           //カードの生成
