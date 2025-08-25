@@ -67,6 +67,7 @@ function enableDrag(obj){
 
   //マウスでつかんだときの処理
   obj.addEventListener("pointerdown", function(e){
+    e.preventDefault(); 											//モバイルでのスクロール防止
     dragging = true;                          //dragされた
     baseX = parseFloat(obj.dataset.x || "0"); //カードの位置を取得
     baseY = parseFloat(obj.dataset.y || "0"); //
